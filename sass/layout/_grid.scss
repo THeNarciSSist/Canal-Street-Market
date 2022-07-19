@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    max-width: 110rem;
+		padding: 0 6rem 0 6rem;
+}
+
+.outer {
+  display: flex;
+  height:100vh;
+  overflow-y:hidden;
+}
+
+.panel {
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  width:4.80%;
+  height: 0%;
+  transition: all 0.5s ease;
+}
+
+.home {
+	position: relative;
+	background-color: rgb(255, 255, 255);
+  min-height: 100%;
+  z-index:10;
+}
+.one {
+  background: rgb(94,163,236);
+  z-index:10;
+  animation: show .5s cubic-bezier(.17,.52,.36,1.01) 1.25s forwards;
+}
+.two {
+  background: rgb(246,68,68);
+  animation: show .5s cubic-bezier(.17,.52,.36,1.01) 1.10s forwards;
+  z-index:11;
+}
+.three {
+  background: rgb(255,180,0);
+  animation: show .5s cubic-bezier(.17,.52,.36,1.01) 1s forwards;
+  z-index:12;
+}
+
+.active {
+  width:88%;
+  height: 100%;
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.active::-webkit-scrollbar {
+	display: none;
+}
+
+
+
+.logo {
+	position: fixed;
+	top: 5.9rem;
+	left: 5.7rem;
+	z-index: 1000;
+}
+
+@keyframes show{
+  0% {
+    height: 0%;
+  }
+  
+  100% {
+    height: 100%;
+  }
+}
+

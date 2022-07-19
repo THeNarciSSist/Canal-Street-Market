@@ -1,0 +1,24 @@
+/*
+	Store your @font-face in here
+-------------------------------------------------- */
+
+@font-face {
+	font-family: 'ogg';
+	src: url('../fonts/Ogg_Roman.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'apercu';
+	src: url('../fonts/FontsFree-Net-ApercuRegular.ttf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'apercu mono';
+	src: url('../fonts/ApercuMonoProRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+		box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+
+html {
+	font-size: 62.5%;
+
+	// @include respond(tab-land) {
+  //   font-size: 56.25%; // 1 rem = 9px
+  // }
+  // @include respond(tab-port) {
+  //   font-size: 50%; // 1rem = 8px
+  // }
+  // @include respond(phone) {
+  //   font-size: 50%; // 1rem = 8px
+  // }
+  // @include respond(big-desk) {
+  //   font-size: 75%; // 1 rem = 12px
+  // }
+
+}
+
+::selection {
+	background: #000;
+	text-shadow: none;
+	color: #fff;
+}
